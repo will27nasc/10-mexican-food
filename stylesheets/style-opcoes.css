@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*Início configurações padrão*/
+:root{
+    /*Black and White*/
+    --branco-: white;
+    --preto-: black;
+    /*---------------*/
+
+    /*Primary*/
+    --primary-darker: #002E20;
+    --primary-dark-1: #103B29;
+    --primary-dark-2: #164F37;
+    --primary-dark-3: #1B6244;
+    --primary-normal: #1D6949; 
+    --primary-normal-1: #207652;
+    --primary-normal-2: #24835B;
+    --primary-light-1: #BBD9CC;
+    --primary-light-2: #DEECE6;
+    --primary-light: #E9F3Ef;
+
+    /*Secundary*/
+    --secundary-darker: #4A1810;
+    --secundary-dark: #5E1F14;
+    --secundary-dark-1: #7E2A1B;
+    --secundary-dark-2: #9E3522;
+    --secundary-normal: #A83824; 
+    --secundary-normal-1: #BD3F29;
+    --secundary-normal-2: #D2462D;
+    --secundary-light-1: #F1C6BE;
+    --secundary-light-2: #F8E3E0;
+    --secundary-light: #FBEDEA;
+
+    /*Tertiary*/
+    --Tertiary-darker: #59481A;
+    --Tertiary-dark-1: #725D21;
+    --Tertiary-dark-2: #987C2C;
+    --Tertiary-dark-3: #BF9B38;
+    --Tertiary-normal: #CBA53B; 
+    --Tertiary-normal-1: #E5B943;
+    --Tertiary-normal-2: #FECE4A;
+    --Tertiary-light-1: #FFF0C7;
+    --Tertiary-light-2: #FFF8E4;
+    --Tertiary-light: #FFFAED;
+
+    /*Neutral*/
+    --Neutral-darker: #161514;
+    --Neutral-dark-1: #1D1B1A;
+    --Neutral-dark-2: #262522;
+    --Neutral-dark-3: #302E2B;
+    --Neutral-normal: #33321E; 
+    --Neutral-normal-1: #3A3733;
+    --Neutral-normal-2: #403D39;
+    --Neutral-light-1: #C4C3C2;
+    --Neutral-light-2: #E2E2E1;
+    --Neutral-light: #ECECEB;
+
+    /*Font size*/
+    --heading-1: 50px;
+    --heading-2: 40px;
+    --heading-3: 30px;
+    --heading-4: 25px;
+    --heading-5: 20px;
+    --heading-6: 16px;
+    --labels: 12px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.active-2 a{
+    text-decoration: underline;
+}
+
+.box-prato{
+    flex-basis: 600px;
+}
+
+.img-prato{
+    width: 100%;
+}
+
+.img-prato img{
+    width: 100%;
+}
+
+.prato-info{
+    padding: 5px 1%;
+}
+
+.prato-info h4{
+    font-size: var(--heading-4);
+    color: var(--branco-);
+}
+
+.prato-info h5{
+    font-size: var(--heading-5);
+    color: var(--Tertiary-normal-2);
+}
+
+.prato-info p{
+    padding: 15px 0;
+    color: var(--branco-);
+    text-align: justify;
+}
+
+/*Fim configurações padrão*/
+
+
+/*Início configurações página bebidas */
+.secao-beer{
+    margin-top: 40px;
+}
+
+.secao-beer h3,
+.tequilas h3,
+.caipirinhas h3,
+.nao-alcoolicos h3{
+    color: var(--Tertiary-normal);
+    font-size: var(--heading-3);
+    padding-bottom: 25px;
+}
+/*Início secao-beer*/
+.cervejas{
+    display: flex;
+    gap: 40px;
+}
+
+.box-cerveja{
+    flex-basis: 597px;
+    color: var(--branco-);
+}
+
+.box-cerveja p{
+    text-align: justify;
+}
+
+.img-beer{
+    flex-basis: 503px;
+}
+
+.img-beer img{
+    width: 100%;
+}
+
+.anuncio-beer{
+    padding-bottom: 70px;
+}
+
+.anuncio-beer h4{
+    padding: 15px 0px;
+}
+/*Fim secao-beer*/
+
+/*Início section tequilas*/
+.tequilas{
+    margin: 50px 0px;
+}
+
+.container-tequilas{
+    display: flex;
+    gap: 20px;
+}
+
+.box-tequilas{
+    flex-grow: 2;
+    flex-basis: 640px;
+}
+
+.box-tequilas ul li{
+    line-height: 45px;
+    color: var(--branco-);
+}
+
+.img-tequilas{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.img-tequilas img{
+    width: 85%;
+    height: 80%;
+}
+/*Fim section tequilas*/
+
+/*Início section caipirinhas*/
+.caipirinhas{
+    margin: 50px 0px;
+}
+
+.container-caipirinhas{
+    display: flex;
+    gap: 20px;
+}
+
+.box-caipirinhas{
+    flex-grow: 2;
+    flex-basis: 640px;
+}
+
+.box-caipirinhas ul li{
+    line-height: 45px;
+    color: var(--branco-);
+}
+
+.img-caipirinhas{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.img-caipirinhas img{
+    width: 85%;
+    height: 85%;
+}
+/*Fim section caipirinhas*/
+
+/*Inicio section nao-alcoolicos*/
+.container-na{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.anuncio-nao-alcoolicos{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.preco-na{
+    font: var(--heading-4);
+    flex-basis: 327px;
+    align-self: center;
+    color: var(--branco-);
+}
+
+.img-na{
+    flex-basis: 183px;
+}
+
+.img-na img{
+    width: 100%;
+}
+/*Fim section nao-alcoolicos*/
+/*Fim configurações página bebidas */
+
+/*Início configurações página appetizers*/
+.appetizers{
+    margin-top: 40px;
+}
+.box-appetizers{
+    flex-basis: 376px;
+    padding: 10px 0 40px;
+}
+
+.img-appetizers{
+    width: 100%;
+}
+
+.img-appetizers img{
+    width: 100%;
+    max-height: 377px;
+    padding-bottom: 30px;
+}
+
+.texto-appetizers{
+    color: var(--branco-);
+}
+
+.texto-appetizers h3{
+    font-size: var(--heading-5);
+}
+
+.texto-appetizers p{
+    padding: 20px 0 15px;
+}
+
+.texto-appetizers h4{
+    font-size: var(--heading-6);
+    color: var(--Tertiary-normal-2);
+}
+/*Fim configurações página appetizers*/
+
+/*Inicio página sobremesa*/
+.sobremesas{
+    margin-top: 50px;
+}
+
+.container-sobremesas{
+    display: flex;
+    gap: 50px;
+}
+
+.anuncio-sobremesa{
+    display: flex;
+    flex-basis: 585px;
+    margin-bottom: 50px;
+}
+
+.texto-sobremesa{
+    flex-basis: 60%;
+    padding-right: 5px;
+    align-self: center;
+    color: var(--branco-);
+}
+
+.texto-sobremesa h3{
+    font-size: var(--heading-5);
+}
+
+.texto-sobremesa h4{
+    font-size: var(--heading-6);
+    padding: 15px 0px;
+}
+
+.texto-sobremesa p{
+    font-size: 0.9rem;
+}
+
+.img-sobremesa{
+    flex-basis: 40%;
+}
+
+.img-sobremesa img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    max-width: 223px;
+    max-height: 150px;
+}
+/*Fim página sobremesa*/
+
+@media screen and (max-width: 768px){
+    /*Início configurações página bebidas */
+    .secao-beer h3,
+    .tequilas h3{
+        font-size: var(--heading-4);
+        padding-bottom: 25px;
+    }
+    /*Início secao-beer*/
+    .box-cerveja p{
+        font-size: 0.9rem;
+    }
+
+    .img-beer img{
+        position: relative;
+        top: 20%;
+    }
+
+    .anuncio-beer{
+        padding-bottom: 70px;
+    }
+
+    .anuncio-beer h4{
+        padding: 15px 0px;
+    }
+    /*Fim secao-beer*/
+
+    /*Início section tequilas*/
+    .box-tequilas ul li{
+        line-height: 45px;
+        font-size: 0.9rem;
+        color: var(--branco-);
+    }
+
+    .img-tequilas img{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /*Fim section tequilas*/
+
+    /*Início section caipirinhas*/
+    .box-caipirinhas ul li{
+        line-height: 45px;
+        font-size: 0.9rem;
+        color: var(--branco-);
+    }
+
+    .img-caipirinhas img{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /*Fim section tequilas*/
+    /*Fim configurações página bebidas */
+
+    /*Início configurações página appetizers*/
+    .texto-appetizers h3{
+        font-size: var(--heading-6);
+    }
+
+    .texto-appetizers p{
+        padding: 20px 0 15px;
+        font-size: 0.8rem;
+    }
+
+    .texto-appetizers h4{
+        font-size: var(--labels);
+        color: var(--Tertiary-normal-2);
+    }
+    /*Fim configurações página appetizers*/
+
+    /*Inicio página sobremesa*/
+    .container-sobremesas{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .anuncio-sobremesa{
+        display: flex;
+        flex-basis: 585px;
+    }
+
+    .img-sobremesa img{
+        width: 100%;
+        max-width: none;
+        max-height: none;
+    }
+    /*Fim página sobremesa*/
+}
+
+@media screen and (max-width: 600px){
+    /*Início configurações padrão*/
+    .box-prato{
+        flex-basis: 600px;
+        margin-bottom: 50px;
+    }
+    /*Fim configurações página padrão*/
+
+    /*Início configurações página bebidas */
+    .secao-beer h3,
+    .tequilas h3{
+        font-size: var(--heading-3);
+        padding: 0px 15px 2%;
+    }
+    /*Início secao-beer*/
+    .cervejas{
+        flex-direction: column-reverse;
+    }
+
+    .box-cerveja{
+        flex-basis: 100%;
+    }
+
+    .img-beer img{
+        position: static;
+        width: 95%;
+        display: block;
+        margin: auto;
+        height: 100%;
+    }
+
+    .anuncio-beer{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    /*Fim secao-beer*/
+
+    /*Início section tequilas*/
+    .container-tequilas{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .box-tequilas{
+        padding: 0 3%;
+        flex-basis: 230px;
+    }
+
+    .box-tequilas ul li{
+        line-height: 45px;
+        font-size: 0.9rem;
+        color: var(--branco-);
+    }
+
+    .img-tequilas{
+        flex-basis: 450px;
+    }
+
+    .img-tequilas img{
+        width: 95%;
+        height: 95%;
+        top: 0;
+        transform: translateY(0);
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    /*Fim section tequilas*/
+
+    /*Início section caipirinhas*/
+    .container-caipirinhas{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .box-caipirinhas{
+        padding: 0 3%;
+        flex-basis: 230px;
+        text-align: center;
+    }
+
+    .box-caipirinhas ul li{
+        line-height: 45px;
+        font-size: 0.9rem;
+        color: var(--branco-);
+    }
+
+    .img-caipirinhas{
+        flex-basis: 450px;
+    }
+
+    .img-caipirinhas img{
+        width: 95%;
+        height: 95%;
+        top: 0;
+        transform: translateY(0);
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    /*Fim section caipirinhas*/
+
+    /*Inicio section nao-alcoolicos*/
+    .container-na{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .anuncio-nao-alcoolicos{
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .preco-na{
+        font: var(--heading-4);
+        flex-basis: 300px;
+        align-self: center;
+        color: var(--branco-);
+    }
+
+    .img-na{
+        flex-basis: 210px;
+    }
+
+    .img-na img{
+        width: 100%;
+    }
+    /*Fim section nao-alcoolicos*/
+    /*Fim configurações página bebidas */
+
+    /*Início configurações página appetizers*/
+    .box-appetizers{
+        width: 70%;
+        padding: 10px 0 40px;
+    }
+
+    .texto-appetizers p{
+        color: var(--branco-);
+        font-size: 1rem;
+    }
+
+    .texto-appetizers h3{
+        font-size: var(--heading-4);
+    }
+
+    .texto-appetizers h4{
+        font-size: var(--heading-5);
+    }
+    /*Fim configurações página appetizers*/
+
+
+}
+
+@media screen and (max-width: 430px){
+    /*Início configurações padrão*/
+    .prato-info h4{
+        font-size: var(--heading-5);
+        color: var(--branco-);
+    }
+
+    .prato-info h5{
+        font-size: var(--heading-6);
+        color: var(--Tertiary-normal-2);
+    }
+
+    .prato-info p{
+        font-size: 0.9rem;
+    }
+    /*Fim configurações padrão*/
+
+    /*Início configurações página bebidas */
+    .secao-beer h3,
+    .tequilas h3{
+        font-size: var(--heading-4);
+        padding: 0px 4px 15px;
+    }
+    /*Início secao-beer*/
+    .box-cerveja{
+        flex-basis: 100%;
+    }
+
+    .img-beer{
+        flex-basis: 380px;
+    }
+
+    .img-beer img{
+        position: static;
+        width: 100%;
+        display: block;
+        margin: auto;
+        height: 100%;
+    }
+
+    .anuncio-beer{
+        padding: 5px 2% 40px;
+    }
+    /*Fim secao-beer*/
+
+    /*Início section tequilas*/
+    .box-tequilas{
+        flex-basis: 230px;
+    }
+
+    .img-tequilas{
+        flex-basis: 340px;
+    }
+
+    .img-tequilas img{
+        width: 100%;
+    }
+    /*Fim section tequilas*/
+
+    /*Início section caipirinhas*/
+    .box-caipirinhas{
+        flex-basis: 230px;
+    }
+
+    .img-caipirinhas{
+        flex-basis: 340px;
+    }
+
+    .img-caipirinhas img{
+        width: 100%;
+    }
+    /*Fim section caipirinhas*/
+
+    /*Início configurações página appetizers*/
+    .box-appetizers{
+        width: 80%;
+        padding: 10px 0 40px;
+    }
+    /*Fim configurações página appetizers*/
+    /*Fim configurações página bebidas */
+
+    /*Inicio página sobremesa*/
+    .anuncio-sobremesa{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .img-sobremesa img{
+        width: 100%;
+        height: 100%;
+    }
+    /*Fim página sobremesa*/
+}
