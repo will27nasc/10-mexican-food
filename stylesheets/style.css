@@ -82,7 +82,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/*Class que eu adiciono no body para quando o menu for ativado ficar fixo*/
+/*Class adicionada na tag body para deixar o menu-mobile sem rolagem*/
 .fixo {
     overflow-y: hidden;
 }
@@ -494,6 +494,7 @@ nav.menu-footer ul li{
         position: absolute;
         padding-top: 180px;
         background-color: var(--primary-normal-1);
+        z-index: 999;
     }
 
     .nav-item{
@@ -514,7 +515,7 @@ nav.menu-footer ul li{
 
     .active {
         left: 0;
-        z-index: 100;
+        z-index: 999;
         transition: 0.2s ease;
     }
     /*Fim configurações header*/

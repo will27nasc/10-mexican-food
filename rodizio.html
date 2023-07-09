@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!--Links-->
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/style-opcoes.css">
+    <link rel="stylesheet" href="./dist/css/splide.min.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/style-opcoes.css">
+    <link rel="stylesheet" href="./stylesheets/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--script-->
+    <script src="./dist/js/splide.min.js"></script>
     <script src="./js/script.js" defer></script>
     <title>10 Mexican Food</title>
 </head>
@@ -46,47 +49,45 @@
 
     <main>
         <div class="container">
-            <div class="box-opcoes">
-                <nav class="opcoes">
+            <a href="cardapio.html" id="button-voltar">Voltar <i class="fa-solid fa-rotate-left"></i></a>
+            <div class="container-rodizio">
+                <div class="container-slider">
+                    <section class="splide" aria-labelledby="carousel-heading">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide" data-splide-interval="5000"><img src="img/slider-1.png" alt="" width="100%"></li>
+                                <li class="splide__slide" data-splide-interval="5000"><img src="img/slider-2.png" alt="" width="100%"></li>
+                                <li class="splide__slide" data-splide-interval="5000"><img src="img/slider-3.png" alt="" width="100%"></li>
+                                
+                            </ul>
+                        </div>
+                
+                        <div class="splide__progress">
+                            <div class="splide__progress__bar"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="rodizio-info">
+                    <h3>Almoço De La Semana</h3>
                     <ul>
-                        <li><a href="bebidas.html">BEBIDAS</a></li>
-                        <li class="active-2"><a href="">GRILLS</a></li>
-                        <li><a href="appetizers.html">APPETIZERS</a></li>
-                        <li><a href="individuis.html">INDIVIDUAIS</a></li>
-                        <li><a href="sobremesa.html">SOBREMESAS</a></li>
+                        <li>Promoção válida de segunda a sexta feira, exceto feriados, das 12h às 15h, em todas as unidades da rede.</li>
+                        <li>Exceto nas unidades que operam com buffet de almoço.</li>
+                        <li>A compra de qualquer prato do cardápio a partir de R$46 inclui 1 bebida (exceto jarras, garrafas) e 1 sobremesa (churros com doce de leite).</li>
+                        <li>A promoção é progressiva: pratos acima de R$92 dão direito a 2 bebidas e 2 sobremesas e acima de 138 reais a 3 bebidas e 3 sobremesas.</li>
+                        <li>Bebidas alcoólicas são proibidas para menores de 18 anos.</li>
+                        <li>Não cumulativa com outras ações promocionais.</li>
                     </ul>
-                </nav><!--opcoes-->
-
-                <div class="rota">
-                    <a href="cardapio.html">Cardápio</a>
-                    <span>></span>
-                    <a href="#">Grills</a>
-                </div><!--rota-->
-
-                <section class="box-par">
-                    <div class="box-prato">
-                        <div class="img-prato">
-                            <img src="img/grill-2.png" alt="Frango">
-                        </div><!--img-prato-->
-                        <div class="prato-info">
-                            <h4>Meat with fries</h4>
-                            <p>Banquete do mais tenro e suculento corte especial de Maminha Black Angus muito bem acompanhado de nossas crocantes batatas rústicas. Acompanham molho barbecue, maionese e nossas deliciosas tortillas.</p>
-                            <h5>R$ 156,00</h5>
-                        </div><!--prato-info-->
-                    </div><!--box-prato-->
-                    
-                    <div class="box-prato">
-                        <div class="img-prato">
-                            <img src="img/grill-1.png" alt="Carne">
-                        </div><!--img-prato-->
-                        <div class="prato-info">
-                            <h4>Meat with fries</h4>
-                            <p>Banquete com corte especial de Picanha Black Angus muito bem acompanhado por deliciosas coxas de frango. Acompanham molho barbecue, cebolas fritas, tomate e pimentão verde.</p>
-                            <h5>R$ 148,00</h5>
-                        </div><!--prato-info-->
-                    </div><!--box-prato-->
-                </section><!--box-par-->
-            </div><!--box-opcoes-->
+                </div>
+            </div><!--container-rodizio-->
         </div><!--container-->
     </main>
 
@@ -123,5 +124,15 @@
             <span>Imagens meramente ilustrativas.  TM & © 2023 100 Méxican Food. Todos os direitos reservados.</span>
         </div><!--footer-2-->
     </footer>
+
+    <script>
+        var splide = new Splide( '.splide', {
+            type  : 'loop',
+            autoplay: 'playing',
+            rewind: true,
+        } );
+    
+        splide.mount();
+    </script>
 </body>
 </html>
