@@ -76,17 +76,25 @@
     box-sizing: border-box;
 }
 
+html ::-webkit-scrollbar {
+    width: 15px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: var(--secundary-dark-1);
+    border: 2px solid var(--secundary-darker);
+}
+
+html ::-webkit-scrollbar-track {
+    background-color: var(--secundary-darker);
+}
+
 body{
     background-image: url('../img/dark-wood.jpg');
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
 }
-
-/*Class adicionada na tag body para deixar o menu-mobile sem rolagem*/
-.fixo {
-    overflow-y: hidden;
-}
-/*------------------------------------------------------------------------*/
 
 header{
     z-index: 2;
@@ -436,6 +444,12 @@ nav.menu-footer ul li{
 /*Fim configuração footer*/
 
 @media screen and (max-width: 768px){
+    /*Class adicionada na tag body para deixar o menu-mobile sem rolagem*/
+    .fixo {
+        overflow-y: hidden;
+    }
+    /*------------------------------------------------------------------------*/
+    
     /*Início configurações header*/
     .selected a{
         color: var(--primary-darker) !important;
