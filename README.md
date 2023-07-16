@@ -26,3 +26,5 @@ O objetivo da **10 Méxican Food** é facilitar a busca de amantes da gastronomi
 ## 📄 Licença
 
 Este projeto está sob a licença (will27nasc/10-mexican-food) - veja o arquivo [LICENSE.md](https://github.com/will27nasc/10-mexican-food/blob/main/LICENSEhttps://github.com/will27nasc/10-mexican-food/blob/main/LICENSE) para detalhes.
+
+Visite o site [10 mexican food](https://will27nasc.github.io/10-mexican-food/) 😊
