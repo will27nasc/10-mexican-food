@@ -9,7 +9,7 @@ O objetivo da **10 Méxican Food** é facilitar a busca de amantes da gastronomi
 
 * HTML - Construção do corpo das páginas
 * CSS - Estilo das páginas
-* Vanilla JS - contrução do menu
+* Vanilla JS - construção do menu
 * [AOS](http://michalsnik.github.io/aos/) - Usado para animações
 * [SLIDER](https://splidejs.com/) - Usado para o slider
 
