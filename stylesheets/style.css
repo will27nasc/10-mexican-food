@@ -834,6 +834,9 @@ nav.menu-footer ul li{
 
 /* Configuração para dispositivos em moveis posição horizontal */
 @media (orientation: landscape) and (max-width: 768px) {
+    .fixo {
+        overflow-y: scroll;
+    }
     .nav-menu {
         padding-top: 2rem;
     }
